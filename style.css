@@ -1,0 +1,60 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+/* =========================
+   Part 1: Transitions & Animations
+========================= */
+
+/* Button hover transition */
+.btn-hover {
+  padding: 10px 20px;
+  background: teal;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn-hover:hover {
+  background: darkcyan;
+  transform: scale(1.1);
+}
+
+/* Continuous CSS animation */
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background: coral;
+  animation: bounce 2s infinite alternate;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-50px); }
+}
+
+/* =========================
+   Part 3: JS + CSS animations
+========================= */
+
+.animBox {
+  width: 120px;
+  height: 120px;
+  margin: 20px auto;
+  background: purple;
+  transition: transform 1s, opacity 1s;
+}
+
+.animate {
+  transform: rotate(360deg) scale(1.5);
+  opacity: 0.5;
+}
